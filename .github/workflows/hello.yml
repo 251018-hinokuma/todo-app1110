@@ -27,8 +27,9 @@ jobs:
           echo "ランナーの OS：${{ runner.os }}"
       - name: 自分の名前
         run: |
-          echo "${{github.actor}}が${{github.ref_name}}ブランチにpushしました"
-          echo "${{TZ=Asia/Tokyo date}}"
+          echo "${{ github.actor }} が ${{ github.ref_name }} ブランチに push しました"
+          TZ=Asia/Tokyo date
+
 
   goodbye:
     needs: greet
