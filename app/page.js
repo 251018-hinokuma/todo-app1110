@@ -1,5 +1,5 @@
-// import TodoAppClient from '@/components/TodoAppClient'
-import TodoAppClient from '@/components/TodoAppClinet'
+import TodoAppClient from '@/components/TodoAppClient'
+
 export default function Home() {
   return (
     <main className="container">
