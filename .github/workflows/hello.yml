@@ -39,18 +39,4 @@ jobs:
       - name: お別れ
         run: echo "greet が終わったので goodbye です"
 
-jobs:
-  prepare:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "準備"
-  build:
-    needs: prepare
-    runs-on: ubuntu-latest
-    steps:
-        - run: echo "ビルド"
-  chexk:
-    needs: prepare
-    runs-on: ubuntu-latest
-    steps:
-        - run: echo "チェック"
+

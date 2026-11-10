@@ -1,0 +1,20 @@
+
+
+name: 演習２
+on:
+  workflow_dispatch:
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "準備"
+  build:
+    needs: prepare
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "ビルド"
+  check:
+    needs: prepare
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "チェック"
