@@ -7,6 +7,7 @@ export default function AboutPage() {
     <main className="container">
       <h1>このアプリについて</h1>
       <p>「Webフロントエンド」の授業で作っている TODO アプリです。</p>
+       <img src="/next.svg" alt="logo" />
       <ul>
         <li>Next.js（App Router）</li>
         <li>データはブラウザの localStorage に保存</li>
