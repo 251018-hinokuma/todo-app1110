@@ -56,7 +56,9 @@ on:
 
 jobs:
   test3: 
+  runs-on: ubuntu-latest
   steps:
+  
     - name: package.json の名前を表示
       run: |
         cat package.json
